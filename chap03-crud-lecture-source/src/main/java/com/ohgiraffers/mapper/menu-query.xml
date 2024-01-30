@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment/>
+    <!-- 추가 구문 -->
+    <entry key="insertMenu">
+        INSERT INTO
+            tbl_menu(menu_name, menu_price, category_code, orderable_status )
+        VALUES
+            (?, ?, ?, ?)
+    </entry>
+    <!-- 수정구문 -->
+    <entry key="updateMenu">
+        UPDATE
+            tbl_menu
+        SET
+            menu_name = ?,
+            menu_price = ?
+        WHERE
+            menu_code = ?
+    </entry>
+    <!-- 삭제 구문 -->
+    <entry key="deleteMenu">
+        DELETE
+        FROM
+            tbl_menu
+        WHERE
+            menu_code = ?
+    </entry>
+</properties>

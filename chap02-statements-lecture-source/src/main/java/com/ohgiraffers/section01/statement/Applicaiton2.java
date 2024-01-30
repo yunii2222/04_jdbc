@@ -34,6 +34,7 @@ public class Applicaiton2 {
             /* 3. Statement의 executeQuery(sql)로 쿼리문 실헹하고 결과를 ResultSet으로 반환 받음 */
             rset = stmt.executeQuery(query);
 
+
             /* 4. ResultSet에 담긴 값을 컬럼명을 이용해 꺼내어 출력 */
             if (rset.next()) {
                 System.out.printf(rset.getString("emp_id") + ", " + rset.getString("emp_name"));
